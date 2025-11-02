@@ -4,6 +4,10 @@ import streamlit as st
 from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
+def set_wide_mode():
+    st.set_page_config(layout="wide")
+set_wide_mode()
+
 # Web App Title
 st.markdown('''
 # **The EDA App**
